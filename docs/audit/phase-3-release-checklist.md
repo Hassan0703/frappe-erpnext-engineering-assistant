@@ -65,7 +65,7 @@ recorded as they are; they are never converted into a pass.
 - [x] Local-path scan — no developer paths in shipped files.
 - [x] External canonical links — HTTP 200.
 - [x] Git whitespace — clean (see publication record).
-- [ ] GitHub Actions on the new repository — **pending**, recorded in the publication record.
+- [x] GitHub Actions on the new repository — run 39230198197, **success**, all steps executed.
 
 ## 6. Publication safety
 
@@ -89,6 +89,6 @@ recorded as they are; they are never converted into a pass.
 - [x] No tag or release created beyond the preview positioning.
 - [x] Final status chosen from the allowed set and justified.
 
-**Result:** all mandatory pre-publication gates passed. Two runtime-dependent gates and the CI gate
-were open at the time the release candidate was committed; the CI result is recorded after the push
-in `phase-3-publication-record.md`. The release is published as a preview, not as stable.
+**Result:** all mandatory gates passed, including CI on the published commit. Two runtime-dependent
+gates remain open and are recorded as not run: disposable-bench behaviour checks and live agent
+evaluation. The release is published as a preview, not as stable.

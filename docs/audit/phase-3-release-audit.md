@@ -183,14 +183,14 @@ Run from the repository root on 2026-10-19. Exit status was captured for every c
 | Git whitespace | `git diff --check` after staging | **Passed** — see the publication record |
 | Runtime v16 | Read-only source inspection only | **Not run** — no disposable bench was mutated |
 | Runtime v15 | Read-only source inspection on 15.94.1 | **Partial** — source verified, not executed |
-| GitHub Actions | After push | Recorded in the publication record |
+| GitHub Actions | `validate` on the new repository | **Passed** — run 39230198197, 15 s; checkout, validator, template sync, tests, and manifest parsing all succeeded |
 | Live agent evaluation | Not run | **Not run** — no independent harness |
 
 ## 9. What is not verified
 
 - v15 behaviour was read from source, not executed. No v15 site was used.
 - Scheduler, worker, queue, email delivery, and PDF rendering remain unexercised.
-- GitHub Actions had not run at the time this audit was written; the result is recorded after the push.
+- GitHub Actions passed on the pushed commit; it validates repository structure, not framework runtime behaviour.
 - The five agent-evaluation scenarios were not executed. The rubric and scenarios remain in
   `phase-2-agent-evaluation.md`, and no scenario is claimed as passed.
 - Exact branding fieldnames still vary by patch level; the guidance requires reading the installed
@@ -206,7 +206,7 @@ Run from the repository root on 2026-10-19. Exit status was captured for every c
 - The identity, packaging, documentation, validator, and test suite are complete and pass locally.
 - Runtime evidence exists only for the specific claims recorded in the Phase 2 matrix and the
   source-level checks above.
-- CI had not executed at the moment of the release decision.
+- CI was executed after publication and passed; it is a structural check, not a runtime or agent test.
 - No independent user or agent evaluation has been completed.
 
 A preview label is the honest description of that state. The product is usable today, and the
@@ -215,9 +215,10 @@ limitations are stated in the README rather than hidden behind a stable version 
 ## 11. Publication
 
 The repository was created under the authenticated account `Hassan0703`, public, default branch
-`main`, from the local working copy. The exact commit, remote, push verification, and CI result are
-recorded in [`phase-3-publication-record.md`](phase-3-publication-record.md), which was written after
-the push because those identifiers cannot exist before it.
+`main`, from the local working copy. The initial commit is
+`f1c058006cd3f85c4f2922293344119605e301e9` (105 files). The remote `main`, the GitHub tree, the README
+render, and the CI run were verified after the push. Details:
+[`phase-3-publication-record.md`](phase-3-publication-record.md).
 
 ## 12. Remaining work
 

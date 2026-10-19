@@ -17,9 +17,9 @@
 </p>
 
 > [!IMPORTANT]
-> **Preview release.** The product identity, scope, documentation, validator, and tests are complete
-> and pass locally. Runtime behaviour is verified on Frappe 16.52 only; there is no v15 runtime bench,
-> no live agent evaluation, and CI has not yet run on GitHub. Treat every version-sensitive claim
+> **Preview release.** The product identity, scope, documentation, validator, and tests are complete,
+> and CI passes on the published commit. Runtime behaviour is verified on Frappe 16.52 only; there is
+> no executed v15 runtime check and no live agent evaluation. Treat every version-sensitive claim
 > according to its labelled evidence level (see [Verification status](#verification-status)).
 
 ## What this is
@@ -191,9 +191,11 @@ exact commands run on Frappe 16.52 and the provisioning plan for v15/v16 benches
   value casting, `extend_doctype_class`, test classes, `bench setup-chrome`, `bench data-import`,
   and the operations commands used in the runbook.
 - Source-verified: v15 and v16 library behaviour, hooks, permissions, and metadata.
-- **Not verified:** v15 runtime execution, scheduler/workers, email delivery, PDF rendering, GitHub
-  Actions execution, and live agent evaluation of the five scenarios in
+- **Not verified:** v15 runtime execution, scheduler/workers, email delivery, PDF rendering, and live
+  agent evaluation of the five scenarios in
   [`phase-2-agent-evaluation.md`](docs/audit/phase-2-agent-evaluation.md).
+- **CI:** the `validate` workflow passed on the first published commit (validator, template parity,
+  28 tests, manifest parsing). It checks the repository, not framework runtime behaviour.
 
 ## Testing this repository
 
