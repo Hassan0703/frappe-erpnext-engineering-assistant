@@ -1,0 +1,15 @@
+{
+  "name": "frappe-erpnext-assistant",
+  "description": "Claude Code plugins for Frappe and ERPNext engineering",
+  "owner": {
+    "name": "Hassan0703",
+    "url": "https://github.com/Hassan0703"
+  },
+  "plugins": [
+    {
+      "name": "frappe-erpnext-engineering-assistant",
+      "source": "./plugins/frappe-erpnext-engineering-assistant",
+      "description": "Frappe and ERPNext engineering assistant for v15 and v16: correct code placement, version-aware APIs, white-labeling, ERP implementation, data migration and reconciliation, testing and QA, deployment and operations, security, and an evidence-based review gate"
+    }
+  ]
+}

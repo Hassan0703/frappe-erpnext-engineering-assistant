@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Agent and editor state
+.freebuff/
+.claude/settings.local.json
+.idea/
+.vscode/
+.DS_Store
+
+# Local scratch output
+*.log
+/tmp/

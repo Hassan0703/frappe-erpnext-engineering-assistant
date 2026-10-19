@@ -1,0 +1,42 @@
+name: validate
+
+"on":
+  push:
+    branches: ["**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: repository validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate structure, links, inventory, phrasing and secrets
+        run: python3 scripts/validate_repo.py
+
+      - name: Verify bundled templates match docs/templates
+        run: python3 scripts/sync_templates.py --check
+
+      - name: Run validator tests (passing and failing cases)
+        run: python3 -m unittest discover -s scripts/tests -p "test_*.py" -v
+
+      - name: Verify plugin JSON parses
+        run: |
+          python3 - <<'PY'
+          import json
+          for path in (
+              ".claude-plugin/marketplace.json",
+              "plugins/frappe-erpnext-engineering-assistant/.claude-plugin/plugin.json",
+          ):
+              with open(path, encoding="utf-8") as handle:
+                  json.load(handle)
+              print(f"ok: {path}")
+          PY

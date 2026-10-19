@@ -1,0 +1,23 @@
+# Attribution and provenance
+
+**Frappe ERPNext Engineering Assistant** is an independent, rebranded derivative of the
+MIT-licensed "Frappe Code Standards" plugin.
+
+- Original project: Frappe Code Standards
+- Original copyright: Copyright (c) 2026 NexTash
+- Original license: MIT (see `LICENSE`)
+
+The original MIT license text and copyright notice are preserved unchanged in `LICENSE` and in
+`plugins/frappe-erpnext-engineering-assistant/LICENSE`, as the MIT license requires. Nothing in this
+repository removes or replaces that attribution.
+
+Substantial changes made in this derivative include: a new product identity and packaging metadata,
+a rewritten landing README, an expanded white-labeling workflow, a project-discovery template, a
+production change risk classification, explicit evidence levels, a larger automated validation and
+test suite, and Phase 3 release-audit documentation. The historical audit records in `docs/audit/`
+retain the original product and repository names because they describe the project as it was at the
+time of those reviews.
+
+No Frappe, ERPNext, or third-party trademarks are claimed. "Frappe" and "ERPNext" are used
+descriptively to identify the frameworks this guidance targets. See the licensing section of the
+security reference for the licensing boundary, and consult qualified counsel for legal questions.

@@ -1,0 +1,25 @@
+{
+  "name": "frappe-erpnext-engineering-assistant",
+  "displayName": "Frappe ERPNext Engineering Assistant",
+  "version": "2.0.0-beta.1",
+  "description": "Frappe and ERPNext engineering assistant for v15 and v16: correct code placement, version-aware APIs, security and permissions, white-labeling, deployment and operations, data migration and reconciliation, testing and QA, AI-assisted development, support workflows, and an evidence-based review gate",
+  "author": {
+    "name": "Hassan0703",
+    "url": "https://github.com/Hassan0703"
+  },
+  "homepage": "https://github.com/Hassan0703/frappe-erpnext-engineering-assistant",
+  "repository": "https://github.com/Hassan0703/frappe-erpnext-engineering-assistant",
+  "license": "MIT",
+  "keywords": [
+    "frappe",
+    "erpnext",
+    "python",
+    "engineering-standards",
+    "code-review",
+    "white-label",
+    "deployment",
+    "data-migration",
+    "testing",
+    "security"
+  ]
+}
