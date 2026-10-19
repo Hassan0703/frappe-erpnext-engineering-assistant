@@ -265,8 +265,14 @@ available when the plugin is installed.
 ## Contributing
 
 Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the rule style,
-validation commands, versioning, and template workflow. Use the issue templates for bug reports and
-feature requests, and read [SECURITY.md](SECURITY.md) before reporting a security concern.
+validation commands, versioning, and template workflow.
+
+- [Open an issue](https://github.com/Hassan0703/frappe-erpnext-engineering-assistant/issues/new/choose)
+  — bug reports and feature requests use the provided templates.
+- [Report a security concern](SECURITY.md) privately; do not open a public issue.
+- [Release notes](docs/release-notes/README.md) and [changelog](CHANGELOG.md) describe what changed.
+
+Support is best-effort and community-based; there is no SLA.
 
 ## Changelog and releases
 
