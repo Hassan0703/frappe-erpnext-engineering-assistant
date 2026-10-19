@@ -35,15 +35,16 @@ were checked first; the post-push values below were verified against GitHub, not
 | Remote | `origin` → `git@github.com:Hassan0703/frappe-erpnext-engineering-assistant.git` |
 | Remote `main` | identical to the local commit (`git ls-remote`) |
 | Remote blob count | 105 (GitHub tree API) |
+| Follow-up commit | `ba5b7ff24249e028c34eaac5ce6b8e67c77cb007` — records this verification |
 
 ## CI
 
 | Item | Value |
 |---|---|
 | Workflow | `validate` |
-| Run | 39230198197 (push to `main`) |
-| Result | **success**, 15 s |
-| Steps executed | checkout, setup-python, validator, template sync check, validator tests, manifest JSON parse — all success |
+| Run (initial commit) | 39230198197 — **success**, 15 s |
+| Run (follow-up commit) | 39230635881 — **success**, 14 s |
+| Steps executed | checkout, setup-python, validator, template sync check, validator tests, manifest JSON parse — all success in both runs |
 
 The workflow ran on a clean GitHub checkout, so it confirms the repository validates without the local
 environment.
