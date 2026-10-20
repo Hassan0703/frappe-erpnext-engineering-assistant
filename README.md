@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="plugins/frappe-erpnext-engineering-assistant/.claude-plugin/icon.png" alt="Frappe ERPNext Engineering Assistant" width="140">
+  <img src="images/primary-logo-horizontal-lockup.png" alt="Frappe ERPNext Engineering Assistant" width="480">
 </p>
-
-<h1 align="center">Frappe ERPNext Engineering Assistant</h1>
 
 <p align="center">
   A Frappe and ERPNext engineering assistant for <b>v15 and v16</b> — covering customization,
@@ -236,6 +234,7 @@ plugins/frappe-erpnext-engineering-assistant/
         ├── support-and-incidents.md          Intake, severity, RCA, minimal fix
         └── review-checklist.md               The gate before reporting a task complete
 
+images/                                      Brand assets: horizontal lockup, standalone mark (see images/README.md)
 docs/templates/                               26 fillable client documents
 docs/audit/                                   Phase 1–3 audits, traceability, roadmap, release audit
 scripts/                                      Validator, template sync, and their tests (CI only)

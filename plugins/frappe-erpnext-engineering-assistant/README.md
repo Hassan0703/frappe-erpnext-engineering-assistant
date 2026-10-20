@@ -1,5 +1,9 @@
 # Frappe ERPNext Engineering Assistant
 
+<p align="center">
+  <img src="../../images/stand-alone-logo-square-format.png" alt="Frappe ERPNext Engineering Assistant" width="110">
+</p>
+
 Makes AI coding agents work on Frappe Framework and ERPNext **v15 and v16** projects the way an
 experienced Frappe team would: in the right file, on the right version, with the framework's own
 APIs, and with evidence before anything is reported as done.
