@@ -12,6 +12,10 @@
   <img src="https://img.shields.io/badge/status-preview-orange" alt="Preview">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-black" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/Frappe-v15%20%7C%20v16-red" alt="Frappe v15 | v16">
+  <a href="https://www.skillsdirectory.com/skills/hassan0703-frappe-erpnext-engineering-assistant">
+  <img src="https://www.skillsdirectory.com/api/skills/hassan0703-frappe-erpnext-engineering-assistant/badge" alt="Security: A — Skills Directory">
+</a>
+
 </p>
 
 > [!IMPORTANT]
